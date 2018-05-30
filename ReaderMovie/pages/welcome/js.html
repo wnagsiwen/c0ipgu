@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+	var num=1;
+	// num1=num-- - --num;
+
+	// alert(num1);
+	var num1=5;
+	var num2=6;
+	var num3=7;
+	//alert(num*(num1+num2)*num);
+	// var list=new Array("哈哈","呵呵","嘻嘻");
+	// console.log(list[0]);
+	// var list=new Array();
+	// list[0]="哈哈";
+	// list[1]="嘻嘻";
+	// console.log(list[1]);
+	//var list=["haha","jioaj","hjk"];
+	//console.log(list[2]);
+	// 根据小标修改值
+	// 用数字做下标的数组叫索引数组
+	// 用字母做下标的数组加关联数组
+	//list[0]="哈哈";
+	//console.log(list);
+	var q=new Array();
+	q["at"]="哈哈";
+	q["af"]="哈d哈";
+	q["aw"]="哈c哈";
+	q["ae"]="哈cv哈";
+	q["s"]="哈ds哈";
+	console.log(q);
+	var arr = new Array();  
+	arr["name"] = "mary";  
+	arr["age"] = "3";  
+	arr["sex"] = "man";  
+  	console.log(arr);
+  	var a={"name":"小明","age":"18","sex":"man"};
+  	console.log(a["name"]);
+  	console.log(a);
+  	var name_list=new Array();
+  	name_list["wsw"]=new Array();
+  	name_list["qwe"]=new Array();
+  	// name_list["name"]=new Array();
+  	name_list["wsw"]="王斯文";
+  	name_list["wsw"]["age"]="20";
+  	name_list["wsw"]["sex"]="女";
+  	name_list["wsw"]["tiz"]="90";
+  	name_list["wsw"]["cj"]="数学：75";
+  	name_list["qwe"]="小明";
+  	name_list["qwe"]["age"]="12";
+  	console.log(name_list);
+  	var name_list1=[["hahah","1",2],["嘻嘻",2,3]];
+  	// 给二维数组中的第一个数组的四个位置添加元素
+  	name_list1[0][3]=20;
+  	name_list1[1][2]="哈哈";
+	console.log(name_list1);
+	// 二维数组第二种写法
+	var name_list2=[{"name":"小明","age":"20"},{key2:"value",key3:"value2"}];
+	console.log(name_list2);
+	var jijie=10;
+		if(jijie>=1&&jijie<=3){
+			console.log("春");
+		}else if(jijie>=4&&jijie<=6){
+			console.log("夏");
+		}else if(jijie>=7&&jijie<=9){
+
+		}
+		var num=0;
+		for (var i = 0; i < 100; i++) {
+			// if(i%2==0){
+			// 
+			// }
+			// console.log(num);
+			if(i%2==1){
+				continue;
+			}
+			console.log(i);
+		}
+
+		for (var i = 1; i <= 9; i++) {
+			for (var j =1; j <= i ;j++) {
+				 document.write(i+"*"+j+"="+(i*j)+"   ");
+			}
+			document.write("<br>");
+		}
+	</script>	
+
+</body>
+</html>

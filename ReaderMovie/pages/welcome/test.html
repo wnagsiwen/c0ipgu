@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<button onclick="one()">点这里</button>
+<button onclick="one()">点这里</button>
+	<script>
+	// 函数
+		function one(){
+			alert("haha");
+		}
+		// 传参 我们可以把数据通过函数的 参数 来传入函数，也可以使用 return 语句把数据从一个函数中传出来。
+		function two(name,age){
+			alert(name+age);
+			return;
+		}
+		two("小明","18");
+		function three(name,age,sex){
+			alert("我叫"+name+"今年"+age+"性别"+sex);
+
+		}
+		var x = function (a, b) {
+			return a * b
+		};
+		alert(x);
+		// 函数的返回值
+		function four(a,b){
+			var sum, a,b;
+			sum=a*b;
+			return sum;
+		}
+		var num=four(2,3);
+		var num1=four(4,5);
+		var shu=num+num1;
+		document.write(shu);
+		function five(a,b){
+			var sum,a,b;
+			sum=a*b;
+			return sum;
+		}
+		var num=five(4,5);
+		var num1=five(5,6);
+		var q=num+num1;
+		document.write("回调函数"+q);
+		// 返回值函数
+	function timeFive(a){
+    var sum;
+ 	sum=a*5;
+    return  sum;
+    alert("jokl");
+	}
+	var t=timeFive(5);
+	document.write(t);
+	function bl(a,b){
+		var sum ,a,b;
+		sum=a*b;
+		return sum;
+	}
+sum=bl(12,3);
+alert(sum);
+ var index = 10; 
+    function par(){  
+    	
+         function fun(){  
+            index = 15;  
+            alert(index);
+          }  
+          fun();  
+    }      
+    par();
+    document.write(index);
+   
+    function par(){
+    	 var index=15;
+    	function fun(){
+    		index=10;
+    		alert(index);
+    	}
+    	fun();
+    }
+    par();
+    document.write(index);
+
+	</script>
+</body>
+</html>
